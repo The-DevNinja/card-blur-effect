@@ -4,6 +4,11 @@ html {
 }
 
 body {
+    background: linear-gradient(120deg, rgb(3, 103, 218), blue);
+    min-height: 100vh;
+    display: grid;
+    align-items: center;
+    padding: 0 3vw;
     display: grid;
     min-height: 100vh;
     place-content: center;
@@ -11,6 +16,30 @@ body {
 
 #container {
     display: grid;
+    grid-auto-flow: column;
+    gap: 1em;
+}
+
+#container div {
+    background-color: white;
+    font-weight: bold;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    gap: 0.5em;
+    border-radius: 1em;
+    padding: 1em;
+    color: blue;
+    transition-duration: 0.3s;
+}
+
+svg {
+    height: 10vw;
+    aspect-ratio: 1;
+}
+
+span {
+    font-size: 3vw;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -42,6 +71,20 @@ body {
 
 #container div:hover {
     transition-duration: 0.5s;
+    background-color: blue;
+    color: white;
+    transform: scale(1.2) translateY(-0.5em);
+    z-index: 1;
+    filter: blur(0) !important;
+    box-shadow: 0 0 2em blue;
+}
+
+#container:hover div {
+    transition-duration: 0.5s;
+    filter: blur(1em);
+}
+
+#container div:hover {
     filter: blur(0) !important;
     background-color: blue;
     transform: scale(1.2);

@@ -1,5 +1,4 @@
 html {
-    background-color: rgba(0, 0, 255, 0.287);
     font-family: poppins, monospace;
 }
 
@@ -9,9 +8,6 @@ body {
     display: grid;
     align-items: center;
     padding: 0 3vw;
-    display: grid;
-    min-height: 100vh;
-    place-content: center;
 }
 
 #container {
@@ -40,33 +36,6 @@ svg {
 
 span {
     font-size: 3vw;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-#container div {
-    min-width: 25vw;
-    background-color: white;
-    aspect-ratio: 1;
-    margin: 1em;
-    border-radius: 0.7em;
-}
-
-#container div {
-    transition-duration: 0.5s;
-}
-
-#container:hover div {
-    transition-duration: 0.5s;
-    filter: blur(1em);
-}
-
-#container div {
-    transition-duration: 0.5s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: blue;
 }
 
 #container div:hover {
@@ -82,22 +51,4 @@ span {
 #container:hover div {
     transition-duration: 0.5s;
     filter: blur(1em);
-}
-
-#container div:hover {
-    filter: blur(0) !important;
-    background-color: blue;
-    transform: scale(1.2);
-    color: white;
-}
-
-#container div svg {
-    height: 10vw;
-    aspect-ratio: 1;
-}
-
-#container div span {
-    margin-top: 0.3em;
-    font-size: 1.5em;
-    font-weight: 600;
 }
